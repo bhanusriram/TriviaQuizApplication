@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Trivia Application</string>
+    <string name="TVWelcome">Welcome to Trivia App</string>
+    <string name="bExit">Exit</string>
+    <string name="BStart">Start Trivia</string>
+    <string name="TVStatus">Trivia Stats</string>
+    <string name="TVCorrect">Correct Answers</string>
+    <string name="TVP" />
+    <string name="TVTry">Try again and see if you can get all the correct answers!</string>
+    <string name="BQuit">Quit</string>
+    <string name="BTry">Try Again</string>
+    <string name="TVQ" />
+    <string name="TVQuestion">Q #</string>
+    <string name="TVTime">Time Left: X seconds</string>
+    <string name="TVQText">Question text goes here</string>
+    <string name="BExit">Quit</string>
+    <string name="bNext">Next</string>
+    <string name="TVready">Trivia Ready</string>
+    <string name="LI">Loading Image</string>
+</resources>

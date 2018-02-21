@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cherr.triviaapplication.TriviaActivity">
+
+    <TextView
+        android:id="@+id/textViewQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/TVQuestion" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewQuestionNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="68dp"
+        android:text="@string/TVTime" />
+
+    <ImageView
+        android:id="@+id/imageViewQsn"
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/textViewQuestionNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textViewQuestionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewQuestionNumber"
+        android:layout_below="@+id/imageViewQsn"
+        android:layout_marginTop="31dp"
+        android:text="@string/TVQText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewQuestionText"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/textViewQuestionNumber"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/buttonTQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewQuestionText"
+        android:layout_marginBottom="12dp"
+        android:textAllCaps="false"
+        android:text="@string/BExit" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonTQuit"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false"
+        android:layout_marginEnd="26dp"
+        android:text="@string/bNext" />
+
+    <ProgressBar
+        android:id="@+id/progressBarImage"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewQsn"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/buttonTQuit"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBarImage"
+        android:layout_below="@+id/progressBarImage"
+        android:layout_marginTop="13dp"
+        android:text="@string/LI"
+        android:visibility="invisible" />
+
+</RelativeLayout>
